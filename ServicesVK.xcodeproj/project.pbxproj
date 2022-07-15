@@ -13,6 +13,11 @@
 		078878732880AF290021B0D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078878712880AF290021B0D8 /* Main.storyboard */; };
 		078878752880AF2B0021B0D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078878742880AF2B0021B0D8 /* Assets.xcassets */; };
 		078878782880AF2B0021B0D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078878762880AF2B0021B0D8 /* LaunchScreen.storyboard */; };
+		078878842880B5B90021B0D8 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078878832880B5B90021B0D8 /* ServiceManager.swift */; };
+		078878862880B7180021B0D8 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078878852880B7180021B0D8 /* ServiceModel.swift */; };
+		078878892880B7ED0021B0D8 /* ServiceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078878882880B7ED0021B0D8 /* ServiceData.swift */; };
+		07887892288153230021B0D8 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07887890288153230021B0D8 /* ServiceCell.swift */; };
+		07887893288153230021B0D8 /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07887891288153230021B0D8 /* ServiceCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		078878742880AF2B0021B0D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		078878772880AF2B0021B0D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		078878792880AF2B0021B0D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		078878832880B5B90021B0D8 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		078878852880B7180021B0D8 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		078878882880B7ED0021B0D8 /* ServiceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceData.swift; sourceTree = "<group>"; };
+		07887890288153230021B0D8 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
+		07887891288153230021B0D8 /* ServiceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		0788786A2880AF290021B0D8 /* ServicesVK */ = {
 			isa = PBXGroup;
 			children = (
-				0788786B2880AF290021B0D8 /* AppDelegate.swift */,
+				078878812880B3380021B0D8 /* Controller */,
+				0788787F2880B3270021B0D8 /* Model */,
+				078878802880B3310021B0D8 /* View */,
 				0788786D2880AF290021B0D8 /* SceneDelegate.swift */,
-				0788786F2880AF290021B0D8 /* ViewController.swift */,
-				078878712880AF290021B0D8 /* Main.storyboard */,
+				0788786B2880AF290021B0D8 /* AppDelegate.swift */,
 				078878742880AF2B0021B0D8 /* Assets.xcassets */,
 				078878762880AF2B0021B0D8 /* LaunchScreen.storyboard */,
 				078878792880AF2B0021B0D8 /* Info.plist */,
 			);
 			path = ServicesVK;
+			sourceTree = "<group>";
+		};
+		0788787F2880B3270021B0D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				078878832880B5B90021B0D8 /* ServiceManager.swift */,
+				078878852880B7180021B0D8 /* ServiceModel.swift */,
+				078878882880B7ED0021B0D8 /* ServiceData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		078878802880B3310021B0D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				078878712880AF290021B0D8 /* Main.storyboard */,
+				07887891288153230021B0D8 /* ServiceCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		078878812880B3380021B0D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0788786F2880AF290021B0D8 /* ViewController.swift */,
+				07887890288153230021B0D8 /* ServiceCell.swift */,
+			);
+			path = "\U0010Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				078878782880AF2B0021B0D8 /* LaunchScreen.storyboard in Resources */,
+				07887893288153230021B0D8 /* ServiceCell.xib in Resources */,
 				078878752880AF2B0021B0D8 /* Assets.xcassets in Resources */,
 				078878732880AF290021B0D8 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078878862880B7180021B0D8 /* ServiceModel.swift in Sources */,
 				078878702880AF290021B0D8 /* ViewController.swift in Sources */,
 				0788786C2880AF290021B0D8 /* AppDelegate.swift in Sources */,
+				07887892288153230021B0D8 /* ServiceCell.swift in Sources */,
 				0788786E2880AF290021B0D8 /* SceneDelegate.swift in Sources */,
+				078878842880B5B90021B0D8 /* ServiceManager.swift in Sources */,
+				078878892880B7ED0021B0D8 /* ServiceData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Y5FAL787B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ServicesVK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Y5FAL787B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ServicesVK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
